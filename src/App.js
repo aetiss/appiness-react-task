@@ -1,9 +1,20 @@
 import React from "react";
-import { Button } from "antd";
-import "./App.css";
+import { Switch, Route } from "react-router-dom";
+import LoginForm from "./components/LoginForm";
+import Home from "./components/Home";
+import "./styles/App.css";
 
 const App = () => {
-  return <div></div>;
+  return (
+    <Switch>
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route exact path="/login">
+        <LoginForm />
+      </Route>
+    </Switch>
+  );
 };
 
 export default App;
