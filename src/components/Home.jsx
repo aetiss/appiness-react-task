@@ -43,7 +43,11 @@ const Home = ({ users, fetchUsers, logoutUser }) => {
         </Button>
       </Header>
       <Content style={{ padding: "0 50px" }}>
-        <Table dataSource={dataSource} columns={columns} />
+        <Table
+          dataSource={dataSource}
+          columns={columns}
+          style={{ marginTop: 45 }}
+        />
       </Content>
     </Layout>
   );
