@@ -1,0 +1,15 @@
+.login-layout {
+  min-height: 100vh;
+}
+
+.login-layout-content {
+  background: #fff;
+  padding: 24px;
+  width: 500px;
+  margin-top: 70px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.login-form {
+  margin-top: 20px;
+}
