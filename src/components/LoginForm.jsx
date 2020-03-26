@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
-import { Form, Input, Button, message } from "antd";
+import { Form, Input, Button, message, Typography } from "antd";
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
 import LoginLayout from "../layout/Login";
 import { MailOutlined, LockOutlined, LoginOutlined } from "@ant-design/icons";
 import { login, setLoginError } from "../actions";
+const { Title } = Typography;
 
 const LoginForm = ({
   login,
@@ -38,6 +39,9 @@ const LoginForm = ({
 
   return (
     <LoginLayout>
+      <Title level={4} style={{ textAlign: "center" }}>
+        LOGIN
+      </Title>
       <Form
         name="normal_login"
         className="login-form"
